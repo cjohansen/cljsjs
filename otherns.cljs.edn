@@ -1,0 +1,9 @@
+^{:watch-dirs ["src"]
+  :open-url false
+  :ring-server-options {:port 9110}}
+{:main blink.core
+ :optimizations :advanced
+ :pretty-print false
+ :externs ["src/externs.js"]
+ :output-to "resources/public/js/compiled/otherns.js"
+ :output-dir "resources/public/js/compiled/other-out"}

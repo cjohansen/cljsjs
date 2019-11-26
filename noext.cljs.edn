@@ -1,0 +1,8 @@
+^{:watch-dirs ["src"]
+  :open-url false
+  :ring-server-options {:port 9110}}
+{:main link.noext
+ :optimizations :advanced
+ :pretty-print false
+ :output-to "resources/public/js/compiled/app-prod-noext.js"
+ :output-dir "resources/public/js/compiled/prod-out"}

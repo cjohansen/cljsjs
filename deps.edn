@@ -2,8 +2,10 @@
  :deps {org.clojure/clojure {:mvn/version "1.10.1"}
         org.clojure/clojurescript {:mvn/version "1.10.597"}}
  :aliases
- {:dev {:extra-deps {com.bhauman/figwheel-main {:mvn/version "0.2.3"}}}
+ {:figwheel {:extra-deps {com.bhauman/figwheel-main {:mvn/version "0.2.3"}}}
   :repl {:extra-deps {com.bhauman/rebel-readline-cljs {:mvn/version "0.1.4"}}
          :main-opts ["-m" "figwheel.main" "-b" "dev" "-r"]}
-  :prod {:extra-deps {com.bhauman/figwheel-main {:mvn/version "0.2.3"}}
-         :main-opts ["-m" "figwheel.main" "--build-once" "prod"]}}}
+  :build-dev {:main-opts ["-m" "figwheel.main" "--build-once" "dev"]}
+  :build-prod {:main-opts ["-m" "figwheel.main" "--build-once" "prod"]}
+  :build-prod-noext {:main-opts ["-m" "figwheel.main" "--build-once" "noext"]}
+  :build-other-ns {:main-opts ["-m" "figwheel.main" "--build-once" "otherns"]}}}
