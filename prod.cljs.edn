@@ -1,0 +1,9 @@
+^{:watch-dirs ["src"]
+  :open-url false
+  :ring-server-options {:port 9110}}
+{:main link.core
+ :optimizations :advanced
+ :pretty-print false
+ :externs ["src/externs.js"]
+ :output-to "resources/public/js/compiled/app-prod.js"
+ :output-dir "resources/public/js/compiled/prod-out"}
